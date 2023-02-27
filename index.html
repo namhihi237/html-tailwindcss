@@ -4,11 +4,16 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="./build/tailwind.css" />
+		<!-- <link rel="stylesheet" href="./build/tailwind.css" /> -->
 		<link rel="stylesheet" href="./build/app.css" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<script src="https://cdn.tailwindcss.com"></script>
+		<script
+			type="module"
+			src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+		></script>
+		<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 		<link
 			href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,700;1,400&display=swap"
 			rel="stylesheet"
@@ -16,7 +21,7 @@
 		<title class="flex">TailWindCSS</title>
 	</head>
 	<body>
-		<div class="pt-12">
+		<div class="pt-12 bg-white dark:bg-slate-500">
 			<h1
 				class="text-center text-[#e9d5ff] text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold mb-5"
 			>
@@ -73,6 +78,23 @@
 					</div>
 				</div>
 			</div>
+		</div>
+		<div class="group p-10 border border-red-200">
+			<button
+				class="inline-block py-2 px-10 m-5 text-white bg-indigo-800 group-hover:bg-red-500 hover:motion-safe:scale-105 rounded-md transition-all"
+			>
+				Confirm
+			</button>
+			<input
+				type="text"
+				class="py-2 px-10 border border-gray-400 rounded-md outline-none focus:border-[#ffa400] transition-all"
+			/>
+		</div>
+		<div
+			before=""
+			class="w-10 h-10 flex items-center justify-center text-cyan-400 mx-auto my-5 border rounded-xl relative before:content-[attr(before)] before:absolute before:inset-0 before:rounded-xl before:bg-current before:opacity-25"
+		>
+			<ion-icon name="person-add-outline"></ion-icon>
 		</div>
 	</body>
 </html>
